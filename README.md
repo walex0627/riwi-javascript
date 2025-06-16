@@ -1,4 +1,4 @@
-# Conociendo JavaScript
+# Meeting JavaScript
 
 Learning about of basic topics of JavaScript
 
