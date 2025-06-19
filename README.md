@@ -22,11 +22,12 @@ This repository will be organized into folders, which are:
 
 * **Performance Test**: This folder will contain the performance test code, necessary folders, and assets.
 
-This is the structure of folders:
-
+## Project structure:
+```
 **riwi-javascript (in deveploment branch)**/
 ├── Deliverable_S1/
 │   └── script.js          # Development training of week 1
 ├── PracticeS1/
-│   ├── practice1.jpg  # Imagen de fondo de la sección hero
+│   ├── practice1.jpg      # Practice excersise of week 1 
 └── README.md 
+```
