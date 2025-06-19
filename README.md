@@ -21,3 +21,12 @@ This repository will be organized into folders, which are:
 * **Practice**: These folders will contain practice activities that I will complete step by step. They will be typed as *PracticeSN*, where *N* will be replaced by the corresponding week number. They will contain different files with practical JavaScript exercises, for example: *practice1.js*
 
 * **Performance Test**: This folder will contain the performance test code, necessary folders, and assets.
+
+This is the structure of folders:
+
+**riwi-javascript (in deveploment branch)**/
+├── Deliverable_S1/
+│   └── script.js          # Development training of week 1
+├── PracticeS1/
+│   ├── practice1.jpg  # Imagen de fondo de la sección hero
+└── README.md 
