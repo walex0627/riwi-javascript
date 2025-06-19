@@ -14,12 +14,10 @@ Learning about of basic topics of JavaScript
     * Definitions, expresions and arrows
     * try/catch and throw
 
-## Practice section
+This repository will be organized into folders, which are:
 
+* **Deliverable**: These folders will contain the deliverable for that week's activity. They will be typed as *Deliverable_S**, where * will be replaced by the week number to which the deliverable corresponds, for example: *Deliverable_S1*
 
-## Reflection section
+* **Practice**: These folders will contain practice activities that I will complete step by step. They will be typed as *PracticeSN*, where *N* will be replaced by the corresponding week number. They will contain different files with practical JavaScript exercises, for example: *practice1.js*
 
-* What did I find easiest?
-* What did I find most difficult?
-* How did I overcome my bottlenecks?
-* What didn't I fully understand and need support?
+* **Performance Test**: This folder will contain the performance test code, necessary folders, and assets.
