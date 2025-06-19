@@ -24,7 +24,7 @@ This repository will be organized into folders, which are:
 
 ## Project structure:
 ```
-**riwi-javascript (in deveploment branch)**/
+riwi-javascript/
 ├── Deliverable_S1/
 │   └── script.js          # Development training of week 1
 ├── PracticeS1/
