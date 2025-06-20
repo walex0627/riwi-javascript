@@ -1,8 +1,17 @@
-// // INICIALIZACION DEL PROGRAMA
-console.log("Bienvenido al Sistema Interactivo de Mensajes 📨");
 
 // // CAPTURA DATOS DEL USUARIO Y VALIDA LA ENTRADA
-let nombre = prompt("Por favor, Ingrese su Nombre:");
+let nombre;
+nombre = prompt("Por favor, ingresa tu nombre:");
+while (nombre === null) {
+
+  if (nombre === null) {
+    prompt("Has cancelado la entrada. Por favor, ingresa tu nombre: ");
+
+  }else{
+    alert(`Bienvenido ${nombre} al Sistema Interactivo de Mensajes 📨`);
+    break
+  }
+}
 
 let edad;
 do {
@@ -18,3 +27,4 @@ if (edad >0 && edad <18) {
 }else { 
     alert("Ingrese un numero positivo")
 }
+
