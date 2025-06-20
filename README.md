@@ -26,7 +26,9 @@ This repository will be organized into folders, which are:
 ```
 riwi-javascript/
 ├── Deliverable_S1/
-│   └── script.js          # Development training of week 1
+│   ├── src/
+│   │   └── script.js          # Development training of week 1
+│   ├── index.html
 ├── PracticeS1/
 │   ├── practice1.jpg      # Practice excersise of week 1 
 └── README.md 
