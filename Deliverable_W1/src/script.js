@@ -1,17 +1,12 @@
 
 // // CAPTURA DATOS DEL USUARIO Y VALIDA LA ENTRADA
 let nombre;
-nombre = prompt("Por favor, ingresa tu nombre:");
-while (nombre === null) {
-
-  if (nombre === null) {
-    prompt("Has cancelado la entrada. Por favor, ingresa tu nombre: ");
-
-  }else{
-    alert(`Bienvenido ${nombre} al Sistema Interactivo de Mensajes 📨`);
-    break
-  }
-}
+do {
+  nombre = prompt("Por favor, ingresa tu nombre:");
+  if (nombre === null || nombre.trim() === "")  {
+    alert("No haz ingresado tu nombre o dejaste en blanco el espacio, por favor intentalo de nuevo.")}
+}while (nombre === null || nombre.trim() === "")
+alert(`Bienvenido ${nombre} al Sistema Interactivo de Mensajes 📨`)
 
 let edad;
 do {
@@ -19,12 +14,11 @@ do {
     if (isNaN(edad)) { 
         alert("Por favor, ingrese una edad válida (solo números).");
     }
-} while (isNaN(edad)); 
+} while (isNaN(edad) || edad <= 0 ); 
+
 if (edad >0 && edad <18) {
     alert(`Hola ${nombre}, eres menor de edad. ¡Lista para descubrir este basto mundo de la programacion!.`);
-} else if (edad > 18){
+} else {
     alert(`Hola ${nombre}, eres mayor de edad. ¡Prepárate para grandes oportunidades en el mundo de la programación!`);
-}else { 
-    alert("Ingrese un numero positivo")
 }
 
