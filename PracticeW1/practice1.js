@@ -89,7 +89,6 @@
 //             console.log(resta(Numero1,Numero2))
 //         }else{
 //             console.log(`No se puede realizar la operacion debido aque el numero 1 es mayor que el numero 2`)
-   
 //         };
 //         break;
 //     case 3:
@@ -165,6 +164,7 @@ const usuarios = [
 // Listar los nombres de todos los usuarios.
 // usuarios.forEach((item)=> console.log(`${item.nombre}`))
 
+
 // Filtrar usuarios que vivan en Bogotá.
 // const bogotanos = usuarios.filter((item) => item.ciudad === "Bogotá");
 
@@ -180,14 +180,15 @@ const usuarios = [
 
 // Encontrar el usuario con mayor edad.
 
-const sumaEdad = usuarios.reduce((edadMayor, usuarioActual) => {
-    return usuarioActual.edad > edadMayor.edad ? usuarioActual : edadMayor
-})
+// const sumaEdad = usuarios.reduce((edadMayor, usuarioActual) => {
+//     return usuarioActual.edad > edadMayor.edad ? usuarioActual : edadMayor
+// })
 
-console.log(sumaEdad)
+// console.log(sumaEdad)
 
 
 // Verificar si algún usuario tiene menos de 25 años.
+
 
 // Agregar una nueva compra al usuario con ID 3.
 
