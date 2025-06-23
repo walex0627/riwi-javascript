@@ -189,10 +189,25 @@ const usuarios = [
 
 // Verificar si algún usuario tiene menos de 25 años.
 
+// const edadMenor = usuarios.filter((item)=> item.edad <= 25) ;
 
 // Agregar una nueva compra al usuario con ID 3.
 
+// const nuevaCompra = {producto : "Mouse Logitech", precio : 28};
+// const usuarioActualizar = usuarios.find(usuarios => usuarios.id === 3 );
+
+// if (usuarioActualizar){
+//     usuarioActualizar.compras.push(nuevaCompra)
+//     console.log(`El item ${nuevaCompra} ha sido agregado satisfactoriamente.`)
+
+// }else{ 
+//     console.log("No se encontro ningun usuario con el ID 3")
+// };
+
+// console.log(usuarioActualizar);
+
 // Calcular el total gastado por cada usuario.
+
 
 // Crear un nuevo arreglo con el nombre y ciudad de cada usuario.
 
