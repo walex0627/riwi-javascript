@@ -207,17 +207,72 @@ const usuarios = [
 // console.log(usuarioActualizar);
 
 // Calcular el total gastado por cada usuario.
+// const resumenGastosPorUsuario = usuarios.map(usuarios => {
+//     const totalGastado = usuarios.compras.reduce((suma, compra) => suma + compra.precio, 0);
+//     return{
+//         nombre : usuarios.nombre,
+//         totalGastado: totalGastado
+//     };
+// });
 
+// console.log(resumenGastosPorUsuario)
 
 // Crear un nuevo arreglo con el nombre y ciudad de cada usuario.
 
+// const infoUsuario = usuarios.map(usuarios=>{
+//     return{
+//         nombre : usuarios.nombre,
+//         ciudad : usuarios.ciudad
+//     };
+// });
+
+// console.log(infoUsuario)
+
 // Ordenar los usuarios por edad de menor a mayor.
 
+// const usuarioPorEdad = usuarios.sort((a, b)=>{
+//     return a.edad - b.edad;
+// });
+
+// console.log(usuarioPorEdad)
+
 // Contar cuántos usuarios hay por ciudad.
+// const usuariosPorCiudad = usuarios.reduce((accumulator, usuarios)=>{
+//     const ciudadActual = usuarios.ciudad
+//     if (accumulator[ciudadActual]){
+//         accumulator[ciudadActual]++;
+//     }else{
+//         accumulator[ciudadActual] = 1;
+//     }
+//     return accumulator
+// },{});
+
+// console.log(usuariosPorCiudad);
 
 // Eliminar al usuario con ID 2.
+// const idEliminar = 2
+// const indiceUsuario = usuarios.findIndex(usuarios => usuarios.id === idEliminar);
+// if (indiceUsuario !== -1){
+//     usuarios.splice(indiceUsuario, 1)
+// };
+// console.log(usuarios)
 
-// Modificar el correo del usuario llamado "Mateo Fernández".
+// Modificar el correo del usuario llamado "Mateo Fernández".}
+
+// const usuarioNombre = "Mateo Fernández";
+// const correoNuevo = "mateo123@gmail.com"
+// const usuarioActualizar = usuarios.find(usuarios => usuarios.nombre === usuarioNombre);
+// if (usuarioActualizar){
+    
+//     usuarioActualizar.correo = correoNuevo;
+//     console.log(`Se modifico el correo del usuario ${usuarioNombre}`)
+// } else{
+//     console.log("No se encontro ningun usuario con ese nombre")
+// }
+
+// console.log(usuarios.find(u => u.nombre === usuarioNombre));
+
+
 
 // Buscar el primer usuario que compró un “Mouse”.
 
