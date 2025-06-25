@@ -1,0 +1,25 @@
+{
+  "tareas": [
+    {
+      "id": "1",
+      "tarea": "nombreTarea",
+      "status": "to-do",
+      "description": "sisas",
+      "is_active": false
+    },
+    {
+      "id": "2be8",
+      "tarea": "Programar",
+      "estado": "to-do",
+      "description": "Estudiar js",
+      "is_active": "true"
+    },
+    {
+      "id": "57f8",
+      "tarea": "sisas",
+      "estado": "to-do",
+      "description": "uno dos tres\n",
+      "is_active": "true"
+    }
+  ]
+}

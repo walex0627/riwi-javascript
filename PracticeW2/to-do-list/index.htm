@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" onsubmit="crearTarea(event)">
+        <label for="tarea"></label>
+        <input type="text" name="tarea" id="tarea" placeholder="Nombre" required>
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado" required >
+            <option value="" selected>-</option>
+            <option value="to-do">Por hacer</option>
+            <option value="in-progress">En progreso</option>
+            <option value="done">Hecho</option>
+        </select>
+        <label for="description">Descripcion</label>
+        <textarea id="description" name="description" rows="3"></textarea>
+        <button type="submit">Subir</button>
+    </form>
+    <table id="table-tasks">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Descripcion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="body-table">
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
