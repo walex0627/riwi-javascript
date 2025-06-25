@@ -3,21 +3,18 @@
 // Desarrolla una función getUsuarioPorId(id) que recupere un usuario específico solo si su campo is_active es true.
 // Si el usuario no está activo o no existe, debe devolver null o un mensaje personalizado.
 
-// 🗑️ DELETE lógico
-// Implementa una función eliminarUsuarioLogico(id) que en lugar de eliminar el usuario físicamente, haga un PATCH y
-// cambie el campo is_active a false. El usuario seguirá existiendo en la base de datos, pero no será visible en las consultas normales.
 
 async function crearUsuario(event) {
     event.preventDefault();
-
+    
     const form = new FormData(document.getElementById("formulario"));
-
+    
     try {
     form.append("is_active", true);
-
+    
     let object = {};
     form.forEach((value, key) => (object[key] = value));
-
+    
     const response = await fetch("http://localhost:3000/usuarios", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -27,7 +24,7 @@ async function crearUsuario(event) {
     const nuevoUsuario = await response.json();
     alert("Usuario creado:", nuevoUsuario);
     } catch (error) {
-    console.error("Error al crear usuario:", error);
+        console.error("Error al crear usuario:", error);
     }
 }
 
@@ -48,38 +45,46 @@ async function obtenerUsuariosActivos() {
     button.innerText = "Desactivar";
     button.setAttribute("data-id", `${element.id}`);
     button.setAttribute("class", "boton-desactivar");
-    button.setAttribute("onclick", `eventClick(${element.id})`);
+    button.setAttribute("onclick", `eventClick(${element.id}, ${JSON.stringify(element.nombre)})`);
 
     li.insertAdjacentElement("afterend", button);
 
-
-    });
-    } catch (error) {
+});
+} catch (error) {
     console.error("Error al obtener usuarios:", error);
-    }
+}
 }
 
 document.addEventListener("DOMContentLoaded", function () {
     obtenerUsuariosActivos();
 });
 
-async function eventClick(e) {
-    const url = `http://localhost:3000/usuarios/${e}`;
-    try {
-    const response = await fetch(url, {
-    method: "PATCH",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({is_active:false}),
-    });
-    if (!response.ok) {
-    throw new Error(`Response status: ${response.status}`);
+// 🗑️ DELETE lógico
+// Implementa una función eliminarUsuarioLogico(id) que en lugar de eliminar el usuario físicamente, haga un PATCH y
+// cambie el campo is_active a false. El usuario seguirá existiendo en la base de datos, pero no será visible en las consultas normales.
+async function eventClick(id, nombre) {
+    const confirmChange = window.confirm(`¿Estás seguro de desactivar al usuario "${nombre}"?`);
+    if (!confirmChange) {
+        return;
     }
 
-    const json = await response.json();
-    console.log(json);
-    window.location.reload()
+    const url = `http://localhost:3000/usuarios/${id}`;
+    try {
+        const response = await fetch(url, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ is_active: false }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+
+        const json = await response.json();
+        console.log(json);
+        window.location.reload();
     } catch (error) {
-    console.error(error.message);
+        console.error(error.message);
     }
 }
 
