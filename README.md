@@ -25,11 +25,23 @@ This repository will be organized into folders, which are:
 ## Project structure:
 ```
 riwi-javascript/
-├── Deliverable_S1/
+├── Deliverable_W1/
 │   ├── src/
 │   │   └── script.js      # Development training of week 1
 │   ├── index.html
-├── PracticeS1/
-│   ├── practice1.jpg      # Practice excersise of week 1 
+├── Deliverable_W2/
+│   │   └── gestion_datos.js # Development training of week 2
+├── PracticeW1/
+│   └── practice1.js      # Practice excersise of week 1 
+├── PracticeW2/           
+│   ├──to-do-list/        # Practice excersise of week 2
+│   │    ├── db.json
+│   │    ├── index.html
+│   │    ├── script.js
+│   │    └── style.css
+│   ├──Usuarios/           # Practice excersise of week 2
+│   │    ├── db.json
+│   │    ├── index.html
+│   │    └── README.md
 └── README.md              # This file
 ```
