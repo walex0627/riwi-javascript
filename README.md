@@ -30,7 +30,18 @@ riwi-javascript/
 │   │   └── script.js      # Development training of week 1
 │   ├── index.html
 ├── Deliverable_W2/
-│   │   └── gestion_datos.js # Development training of week 2
+│      └── gestion_datos.js # Development training of week 2
+├── Deliverable_W3/         # Development training of week 3
+│      ├── node_modules 
+│      ├── src
+│      │    ├── gestion_api.js
+│      │    └── style.css
+│      ├── .gitignore
+│      ├── db.json
+│      ├── index.html
+│      ├── package-log.json
+│      ├── package.json
+│      └──vite.config.js
 ├── PracticeW1/
 │   └── practice1.js      # Practice excersise of week 1 
 ├── PracticeW2/           
