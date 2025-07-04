@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "2",
+      "product": "Pantalón Jogger",
+      "quantity": 20,
+      "price": 7
+    },
+    {
+      "id": "3",
+      "product": "Zapatillas Running",
+      "quantity": 20,
+      "price": 89.99
+    },
+    {
+      "id": "a43c",
+      "product": "queso",
+      "price": "20",
+      "quantity": "2"
+    }
+  ]
+}
