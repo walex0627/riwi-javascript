@@ -10,7 +10,7 @@ async function makeProduct(event) {
     let object = {};
     form.forEach((value, key) => (object[key] = value));
     
-    const response = await fetch("http://localhost:3000/products", {
+    const response = await fetch("http://localhost:4000/products", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(object),
@@ -26,7 +26,7 @@ async function makeProduct(event) {
 
 async function obtainProducts() {
     try {
-        const response = await fetch(`http://localhost:3000/products`);
+        const response = await fetch(`http://localhost:4000/products`);
         const obtainProducts = await response.json();
 
         const tbody = document.getElementById("body-table");
@@ -74,7 +74,7 @@ async function deleteProduct(id, product) {
         return;
     }
 
-    const url = `http://localhost:3000/products/${id}`;
+    const url = `http://localhost:4000/products/${id}`;
     try {
         const response = await fetch(url, {
             method: "DELETE"
@@ -117,7 +117,7 @@ document
             price: parseFloat(document.getElementById("editPrice").value),
         };
 
-        const url = `http://localhost:3000/products/${currentEditId}`;
+        const url = `http://localhost:4000/products/${currentEditId}`;
 
         try {
             const response = await fetch(url, {

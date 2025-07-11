@@ -42,6 +42,9 @@ riwi-javascript/
 │      ├── package-log.json
 │      ├── package.json
 │      └──vite.config.js
+├── Deliverable_W4/          # Development training of week 4
+│      ├── main.js
+│      └── index.html
 ├── PracticeW1/
 │   └── practice1.js      # Practice excersise of week 1 
 ├── PracticeW2/           
